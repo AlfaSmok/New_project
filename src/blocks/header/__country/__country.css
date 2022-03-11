@@ -1,0 +1,9 @@
+.header__country {
+  width: 8.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+}

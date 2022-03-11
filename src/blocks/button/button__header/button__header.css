@@ -1,0 +1,8 @@
+.button__header {
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 140%;
+  padding: 1.35rem 2.85rem 1.55rem;
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.header__input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding-left: 5rem;
+  font-size: 1.7rem;
+  line-height: 124%;
+  
+}

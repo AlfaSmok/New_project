@@ -1,0 +1,6 @@
+.header__catalog {
+  display: flex;
+  align-items: center;
+  margin-right: 4.25rem;
+  cursor: pointer;
+}
