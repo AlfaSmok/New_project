@@ -1,0 +1,6 @@
+@media (max-width: 48rem) {
+  .header__wrap {
+    @include maxWindth;
+    position: relative;
+  }
+}

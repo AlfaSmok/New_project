@@ -1,5 +1,6 @@
 // VARIABLES & PATHS
-let fileswatch = 'html,htm,txt,json,md,woff2',
+let preprocessor = 'sass',
+  fileswatch = 'html,htm,txt,json,md,woff2',
   baseDir = 'src',
   imageswatch = 'jpg,jpeg,png,webp,svg',
   online = true;
@@ -7,7 +8,7 @@ let fileswatch = 'html,htm,txt,json,md,woff2',
 let paths = {
 
   styles: {
-    src: baseDir + '/blocks/**/*.css',
+    src: baseDir + '/blocks/**/style.*',
     dest: baseDir + '/css',
   },
 
@@ -28,6 +29,7 @@ const {
   series,
   watch
 } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const newer = require('gulp-newer');
@@ -47,6 +49,7 @@ function browsersync() {
 
 function styles() {
   return src(paths.styles.src)
+    .pipe(eval(preprocessor)())
     .pipe(concat(paths.cssOutputName))
     .pipe(autoprefixer({
       cascade: false,
@@ -71,7 +74,7 @@ function cleanimg() {
 }
 
 function startwatch() {
-  watch(baseDir + '/**/*', {
+  watch(baseDir + '/blocks/**/*', {
     usePolling: true
   }, styles);
   watch(baseDir + '/original-img/**/*.{' + imageswatch + '}', {

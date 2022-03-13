@@ -1,0 +1,10 @@
+.header__region {
+  @include maxWindth;
+  margin-right: 2.5rem;
+}
+
+@media (max-width: 48rem) {
+  .header__region {
+    display: none;
+  }
+}

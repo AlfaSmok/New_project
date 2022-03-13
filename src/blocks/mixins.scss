@@ -1,0 +1,15 @@
+@mixin font ($weight, $size, $height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin vercen {
+  display: flex;
+  align-items: center;
+}
+
+@mixin maxWindth {
+  display: flex;
+  justify-content: space-between;
+}
