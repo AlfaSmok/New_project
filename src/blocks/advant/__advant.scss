@@ -1,0 +1,11 @@
+.advant {
+  padding: 0 39.8rem 9.2rem 38.2rem;
+  color: $color-link;
+}
+
+
+@media (max-width: 48rem) {
+  .advant {
+    padding: 0 3.2rem
+  }
+}
