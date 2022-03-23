@@ -1,6 +1,17 @@
 .advant__img {
   width: 10.8rem;
   height: 10.8rem;
-  padding-bottom: 1.938rem;
+  margin-bottom: 1.938rem;
 }
 
+
+@media (max-width: 48rem) {
+  .advant__img {
+    width: 9.6rem;
+    height: 9.6rem;
+    margin-bottom: 0;
+    margin-right: 1.6rem;
+    flex-shrink: 0;
+  }
+  
+}
