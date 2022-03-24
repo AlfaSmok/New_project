@@ -1,0 +1,11 @@
+.price__list {
+  @include centered;
+  margin-top: 2rem;
+  margin-bottom: 2.6rem;
+}
+
+@media (min-width: 48rem) {
+  .price__list {
+    display: none;
+  }
+}

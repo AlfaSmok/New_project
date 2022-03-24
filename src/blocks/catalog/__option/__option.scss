@@ -3,4 +3,13 @@
   display: grid;
   grid-template-columns: repeat(4, 28.1rem);
   column-gap: 1.6rem;
+  margin-bottom: 1.7rem;
+}
+
+@media (max-width: 48rem) {
+  .catalog__option {
+    grid-template-columns: repeat(1, 28.1rem);
+    row-gap: 1.1rem;
+    margin-bottom: 0;
+  }
 }

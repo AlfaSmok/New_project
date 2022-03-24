@@ -1,3 +1,9 @@
 .cart__wrapper {
   position: relative;
 }
+
+@media (max-width: 48rem) {
+  .cart__wrapper {
+    top: 36.8rem;
+  }
+}

@@ -1,0 +1,4 @@
+.list__document--style {
+  @include font(400, 3.2rem, 118%);
+  color: $color-text-black;
+}
