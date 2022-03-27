@@ -1,0 +1,10 @@
+.test__text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 48rem) {
+  .test__text {
+    text-align: center;
+  }
+}

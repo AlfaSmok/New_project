@@ -1,0 +1,12 @@
+.button__test {
+  padding: 2.6rem 4.95rem 3rem;
+  @include font(600, 1.8rem, 140%);
+  margin-bottom: 9.4rem;
+}
+
+
+@media (max-width: 48rem) {
+  .button__test {
+    margin-bottom: 3.1rem;
+  }
+}

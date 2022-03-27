@@ -1,0 +1,15 @@
+.test__container--background {
+  background: url('../img/test/bg.png');
+  /* background: linear-gradient(270deg, rgba(248, 249, 251, 0.8) 0%, rgba(248, 249, 251, 0.24) 81.47%), url('../img/test/bg.png'); */
+  box-shadow: 0 3.6rem 8.4rem -2.4rem rgba(255, 255, 255, 0.15);
+  background-repeat: no-repeat;
+  border-radius: 1.6rem;
+}
+
+
+@media (max-width: 48rem) {
+  .test__container--background {
+    width: 100%;
+    background: #FFFFFF;
+  }
+}

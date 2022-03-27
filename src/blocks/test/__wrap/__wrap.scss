@@ -1,0 +1,14 @@
+.test__wrap {
+  position: relative;
+  display: flex;
+}
+
+
+@media (max-width: 48rem) {
+  .test__wrap {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}

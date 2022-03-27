@@ -1,0 +1,14 @@
+.test__img {
+  position: absolute;
+  top: -4rem;
+  left: 32rem;
+  width: 53.6rem;
+  height: 57.1rem;
+}
+
+
+@media (max-width: 48rem) {
+  .test__img {
+    position: static;
+  }
+}

@@ -1,0 +1,15 @@
+.test__description {
+  @include font(400, 1.9rem, 160%);
+  color: #576077;
+  width: 57.8rem;
+  padding-bottom: 2rem;
+}
+
+
+@media (max-width: 48rem) {
+  .test__description {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 3rem;
+  }
+}
