@@ -1,0 +1,12 @@
+.drive__button {
+  @include font(600, 1.8rem, 140%);
+  padding: 2.4rem 4.95rem 3rem 4.95rem;
+}
+
+@media (max-width: 48em) {
+  .drive__button {
+    margin: 0 auto;
+    @include centered;
+
+  }
+}

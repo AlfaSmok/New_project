@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -7,24 +9,24 @@
 }
 
 html {
-  font-size: 0.520835vw; // на разрешении 1920 0.520835 === 10px
-  font-family: 'Inter', sans-serif;
+  font-size: 0.520835vw; // на разрешении 1920 0.520835vw === 10px
+  font-family: 'Inter', sans-serif; // шрифт по умолчанию по сайту
   font-style: normal;
   font-weight: normal;
   text-rendering: auto;
   margin: 0;
   padding: 0;
   -webkit-text-size-adjust: 100%;
-
 }
+
 body {
   font-style: normal;
   font-weight: normal;
   text-rendering: auto;
   margin: 0;
   padding: 0;
-  color: $color-text-black;
-  background-color: #ffffff;
+  color: $color-text-black; // цвет по умолчанию текста по сайту
+  background-color: #FFFFFF; //цвет фона сайта по умолчанию
 }
 
 a,
@@ -32,7 +34,7 @@ a:hover {
   text-decoration: none;
 }
 
-input, 
+input,
 textarea {
   line-height: inherit;
   margin: 0;
@@ -46,7 +48,10 @@ button {
   cursor: pointer;
 }
 
-button, input, a, textarea {
+button,
+input,
+a,
+textarea {
   outline: none;
   cursor: pointer;
   font: inherit;
@@ -66,7 +71,12 @@ img {
   object-fit: contain;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font: inherit;
   margin: 0;
   padding: 0;
@@ -97,6 +107,7 @@ button {
 ul {
   padding: 0;
   margin: 0;
+
   li {
     margin: 0;
     padding: 0;
@@ -119,13 +130,12 @@ input[type="number"] {
   margin: 0 auto;
 }
 
-
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   html {
-    // fon-size: 5px;
+    // font-size: 5px;
     font-size: 1.5625vw;
-    // font-size: (100/200) *5vw; где 320 это ширина моб версии
-    -webkit-text-size-adjust: 100%;
+    // font-size: (100/320) * 5vw; // где 320 это ширина моб версии макета
+    -webkit-text-size-adjust: none;
   }
 
   .container {

@@ -19,17 +19,12 @@
       box-shadow: 0 2.0rem 5.2rem -.8rem rgba(0, 0, 0, 0.15);
       border-radius: 1.6rem;
       padding-bottom: 4.7rem;
-      padding-top: 6.2rem;
-      
-  
-      & .button__cart {
+      padding-top: 5.5rem;
+      z-index: 100;
+
+      & .cart__button {
         display: block;
       }
     }
-  }
-}
-@media (max-width: 48rem) {
-  .cart__wrap {
-    min-height: auto;
   }
 }

@@ -1,0 +1,14 @@
+.drive__title {
+  @include font(900, 4.4rem, 120%);
+  margin-bottom: 1.6rem;
+  max-width: 68rem;
+}
+
+
+@media (max-width: 48em) {
+  .drive__title {
+    text-align: center;
+    padding-bottom: 1.3rem;
+
+  }
+}

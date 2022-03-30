@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Lesson-20</title>
+  <title>ОфисДирект</title>
 </head>
+
 <body>
+
   <header class="header">
     <div class="container">
       <div class="header__wrap">
@@ -15,29 +18,28 @@
           <div class="header__burger">
             <img src="img/header/burger-mobile.svg" alt="">
           </div>
-          <a href="#" class="header__logo header-logo__wrap">
-            <div class="header__logo__img">
+          <a href="#" class="header-logo header__wrapper">
+            <div class="header-logo__img">
               <img src="img/header/logo.png" alt="">
             </div>
             <div class="header-logo__text header-logo__text--color">Кресла Samurai</div>
           </a>
           <div class="header__find">
-            <input class ="header__input header__input--color" type="text" placeholder="Название модели или артикул">
+            <input class="header__input header__input--color" type="text" placeholder="Название модели или артикул">
           </div>
-          <div class="header-tel header-tel__wrap">
+          <div class="header-tel header__tel">
             <div class="header-tel__img">
               <img src="img/header/phone.svg" alt="">
             </div>
             <a href="tel:+74952210675" class="header-tel__text header-tel__text--color">+7 495 221-06-75</a>
           </div>
-          <button type="button" class="button button__header button__header--color">Заказать звонок</button>
-
+          <button type="button" class="button header__button button--color">Заказать звонок</button>
         </div>
         <div class="header__menu">
           <div class="header__navigation">
             <button class="menu header__catalog header__catalog--color header__catalog--size-m">
               <img class="menu__img" src="img/header/buger.svg" alt="">
-              <span>Каталог</span>
+              <span class="menu__text">Каталог</span>
             </button>
             <nav class="header__nav">
               <a href="#" class="header__link">О продукте</a>
@@ -58,7 +60,7 @@
                 <option value="Псков"></option>
               </datalist>
             </div>
-            <div class="header-basket header-basket__wrap">
+            <div class="header-basket header__basket">
               <div class="header-basket__img">
                 <img src="img/header/shopping-cart.svg" alt="">
               </div>
@@ -66,245 +68,191 @@
               <div class="header-basket__count header-basket__count--size">+1</div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
   </header>
 
-
   <main class="main">
-    <div class="advant">
+
+    <section class="delivery">
       <div class="container">
-        <div class="advant__wrap">
-          <div class="advant__cart advant__cart--color">
-            <div class="advant__img">
-              <img src="img/advant/Line.svg" alt="">
+        <div class="delivery__wrap">
+          <div class="delivery__item">
+            <div class="delivery__img">
+              <img src="img/delivery/delivery-img-1.svg" alt="">
             </div>
-            <div class="advant__text advant__text">
-              <div class="advant__title advant__title--style"><b>Бесплатная доставка</b> по Москве и Санкт-Петербургу — от 3 шт.</div>
-              <a href="#" class="advant__subtitle advant__subtitle--style">Как получить?</a>
-            </div>
-          </div>
-          <div class="advant__cart advant__cart--color">
-            <div class="advant__img">
-              <img src="img/advant/chess.svg" alt="">
-            </div>
-            <div class="advant__text advant__text">
-              <div class="advant__title advant__title--style"><b>Индивидуальные скидки</b> при заказе от 3 шт.</div>
-              <a href="#" class="advant__subtitle advant__subtitle--style">Смотреть условия</a>
+            <div class="delivery__text">
+              <div class="delivery__diescription"><strong>Бесплатная доставка</strong> по Москве и Санкт-Петербургу — от
+                3
+                шт.</div>
+              <a href="#" class="delivery__link delivery__link--color">Как получить?</a>
             </div>
           </div>
-          <div class="advant__cart advant__cart--color">
-            <div class="advant__img">
-              <img src="img/advant/discount.svg" alt="">
+          <div class="delivery__item">
+            <div class="delivery__img">
+              <img src="img/delivery/delivery-img-2.svg" alt="">
             </div>
-            <div class="advant__text advant__text">
-              <div class="advant__title advant__title--style">Для юридических лиц
-                действуют <b>особые условия</b></div>
-              <a href="#" class="advant__subtitle advant__subtitle--style">Узнать подробнее</a>
+            <div class="delivery__text">
+              <div class="delivery__diescription"><strong>Индивидуальные скидки</strong> при заказе от 3 шт.</div>
+              <a href="#" class="delivery__link delivery__link--color">Смотреть условия</a>
+            </div>
+          </div>
+          <div class="delivery__item">
+            <div class="delivery__img">
+              <img src="img/delivery/delivery-img-3.svg" alt="">
+            </div>
+            <div class="delivery__text">
+              <div class="delivery__diescription">Для юридических лиц действуют <strong>особые условия</strong></div>
+              <a href="#" class="delivery__link delivery__link--color">Узнать подробнее</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <section class="catalog">
       <div class="container">
-        <h2 class="catalog__title">Каталог кресел</h2>
-        <div class="catalog__price">
-          <input type="text" list="list" class="catalog__price catalog__price--style" placeholder="По возрастанию цены">
-            <datalist id="list">
-              <option value="  "></option>
-              <option value="  "></option>
-              <option value="  "></option>
-            </datalist>
-        </div>
-        <div class="catalog__option">
-          <div class="option__cart">
-            <span class="subtitle__input subtitle__input--style">Спинка</span>
-            <input type="text" list="list_1" class="option__input option__input--style option__input--imgback" placeholder="Сетка">
-            <datalist id="list_1">
-              <option value="  "></option>
-              <option value="  "></option>
-              <option value="  "></option>
-            </datalist>
-          </div>
-          <div class="option__cart">
-            <span class="subtitle__input subtitle__input--style">Сиденье</span>
-            <input type="text" list="list_2" class="option__input option__input--style option__input--imggrid" placeholder="Кожзам">
-            <datalist id="list_2">
-              <option value="  "></option>
-              <option value="  "></option>
-              <option value="  "></option>
-            </datalist>
-          </div>
-          <div class="option__cart">
-            <span class="subtitle__input subtitle__input--style">Подголовник</span>
-            <input type="text" list="list_3" class="option__input option__input--style option__input--img3D" placeholder="3D">
-            <datalist id="list_3">
-              <option value="  "></option>
-              <option value="  "></option>
-              <option value="  "></option>
-            </datalist>
-          </div>
-          <div class="option__cart">
-            <span class="subtitle__input subtitle__input--style">Подлокотники</span>
-            <input type="text" list="list_4" class="option__input option__input--style option__input--imgall" placeholder="Все">
-            <datalist id="list_4">
-              <option value="  "></option>
-              <option value="  "></option>
-              <option value="  "></option>
-            </datalist>
-          </div>
-        </div>
+        <h2 class="title catalog__title">Каталог кресел</h2>
         <div class="catalog__wrap">
-          <a href="#" class="cart cart__wrapper cart--color">
-            <div class="cart__wrap">
+          <a href="#" class="cart catalog__cart cart--color">
+            <div class="cart__wrap cart__wrap--color">
               <div class="cart__img">
                 <img src="img/cart/cart.png" alt="">
               </div>
               <div class="cart__title cart__title--color">Samurai KL-1.04 Темно-коричневый</div>
-              <div class="cart__coin--new">23 000 ₽</div>
-              <div class="cart__coin--old">
+              <div class="cart__coin-new">23 000 ₽</div>
+              <div class="cart__coin-old">
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <div class="button__cart button__cart--color">Добавить в корзину</div>
+              <div class="button cart__button button--style">Добавить в корзину</div>
             </div>
           </a>
-          <a href="#" class="cart cart__wrapper cart--color">
-            <div class="cart__wrap">
+          <a href="#" class="cart catalog__cart cart--color">
+            <div class="cart__wrap cart__wrap--color">
               <div class="cart__img">
-                <img src="img/cart/cart2.png" alt="">
+                <img src="img/cart/cart-2.png" alt="">
               </div>
               <div class="cart__title cart__title--color">Samurai KL-1.04 Темно-коричневый</div>
-              <div class="cart__coin--new">23 000 ₽</div>
-              <div class="cart__coin--old">
+              <div class="cart__coin-new">23 000 ₽</div>
+              <div class="cart__coin-old">
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <div class="button__cart button__cart--color">Добавить в корзину</div>
+              <div class="button cart__button button--style">Добавить в корзину</div>
             </div>
           </a>
-          <a href="#" class="cart cart__wrapper cart--color">
-            <div class="cart__wrap">
+          <a href="#" class="cart catalog__cart cart--color">
+            <div class="cart__wrap cart__wrap--color">
               <div class="cart__img">
-                <img src="img/cart/cart2.png" alt="">
+                <img src="img/cart/cart-2.png" alt="">
               </div>
               <div class="cart__title cart__title--color">Samurai KL-1.04 Темно-коричневый</div>
-              <div class="cart__coin--new">23 000 ₽</div>
-              <div class="cart__coin--old">
+              <div class="cart__coin-new">23 000 ₽</div>
+              <div class="cart__coin-old">
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <div class="button__cart button__cart--color">Добавить в корзину</div>
+              <div class="button cart__button button--style">Добавить в корзину</div>
             </div>
           </a>
-          <a href="#" class="cart cart__wrapper cart--color">
-            <div class="cart__wrap">
+          <a href="#" class="cart catalog__cart cart--color">
+            <div class="cart__wrap cart__wrap--color">
               <div class="cart__img">
-                <img src="img/cart/cart2.png" alt="">
+                <img src="img/cart/cart-2.png" alt="">
               </div>
               <div class="cart__title cart__title--color">Samurai KL-1.04 Темно-коричневый</div>
-              <div class="cart__coin--new">23 000 ₽</div>
-              <div class="cart__coin--old">
+              <div class="cart__coin-new">23 000 ₽</div>
+              <div class="cart__coin-old">
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <div class="button__cart button__cart--color">Добавить в корзину</div>
+              <div class="button cart__button button--style">Добавить в корзину</div>
             </div>
           </a>
-          <a href="#" class="cart cart__wrapper cart--color">
-            <div class="cart__wrap">
+          <a href="#" class="cart catalog__cart cart--color">
+            <div class="cart__wrap cart__wrap--color">
               <div class="cart__img">
-                <img src="img/cart/cart2.png" alt="">
+                <img src="img/cart/cart.png" alt="">
               </div>
               <div class="cart__title cart__title--color">Samurai KL-1.04 Темно-коричневый</div>
-              <div class="cart__coin--new">23 000 ₽</div>
-              <div class="cart__coin--old">
+              <div class="cart__coin-new">23 000 ₽</div>
+              <div class="cart__coin-old">
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <div class="button__cart button__cart--color">Добавить в корзину</div>
+              <div class="button cart__button button--style">Добавить в корзину</div>
             </div>
           </a>
-          <a href="#" class="cart cart__wrapper cart--color">
-            <div class="cart__wrap">
+          <a href="#" class="cart catalog__cart cart--color">
+            <div class="cart__wrap cart__wrap--color">
               <div class="cart__img">
-                <img src="img/cart/cart2.png" alt="">
+                <img src="img/cart/cart-2.png" alt="">
               </div>
               <div class="cart__title cart__title--color">Samurai KL-1.04 Темно-коричневый</div>
-              <div class="cart__coin--new">23 000 ₽</div>
-              <div class="cart__coin--old">
+              <div class="cart__coin-new">23 000 ₽</div>
+              <div class="cart__coin-old">
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <div class="button__cart button__cart--color">Добавить в корзину</div>
+              <div class="button cart__button button--style">Добавить в корзину</div>
             </div>
           </a>
-          <a href="#" class="cart cart__wrapper cart--color">
-            <div class="cart__wrap">
+          <a href="#" class="cart catalog__cart cart--color">
+            <div class="cart__wrap cart__wrap--color">
               <div class="cart__img">
-                <img src="img/cart/cart2.png" alt="">
+                <img src="img/cart/cart-2.png" alt="">
               </div>
               <div class="cart__title cart__title--color">Samurai KL-1.04 Темно-коричневый</div>
-              <div class="cart__coin--new">23 000 ₽</div>
-              <div class="cart__coin--old">
+              <div class="cart__coin-new">23 000 ₽</div>
+              <div class="cart__coin-old">
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <div class="button__cart button__cart--color">Добавить в корзину</div>
+              <div class="button cart__button button--style">Добавить в корзину</div>
             </div>
           </a>
-          <a href="#" class="cart cart__wrapper cart--color">
-            <div class="cart__wrap">
+          <a href="#" class="cart catalog__cart cart--color">
+            <div class="cart__wrap cart__wrap--color">
               <div class="cart__img">
-                <img src="img/cart/cart2.png" alt="">
+                <img src="img/cart/cart-2.png" alt="">
               </div>
               <div class="cart__title cart__title--color">Samurai KL-1.04 Темно-коричневый</div>
-              <div class="cart__coin--new">23 000 ₽</div>
-              <div class="cart__coin--old">
+              <div class="cart__coin-new">23 000 ₽</div>
+              <div class="cart__coin-old">
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <div class="button__cart button__cart--color">Добавить в корзину</div>
+              <div class="button cart__button button--style">Добавить в корзину</div>
             </div>
           </a>
-          
         </div>
         <div class="catalog__more catalog__more--style">
-          <button type="button" class="button__more">Показать все</button>
+          <button type="button" class="catalog__button">Показать все</button>
         </div>
       </div>
     </section>
-    <div class="test">
-      <div class="test__container test__container--background">
+
+    <section class="drive">
+      <div class="drive__wrapper drive__wrapper--style">
         <div class="container">
-          <div class="test__wrap test__wrap--style">
-            <div class="test__text">
-              <div class="test__title">
-                Посетите салон и проведите тест-драйв лично
-              </div>
-              <div class="test__description">
-                У нас есть шоурумы в Москве и Санкт-Петербурге, где мы всегда рады видеть вас. Дат профессиональную консультацию и поделиться экспертизой
-              </div>
-              <button type="submit" class="button__test button__test--color">Запись на тест-драйв</button>
-            </div>
-            <div class="test__img">
-              <img class="test__img test__img--desktop" src="img/test/girl.png" alt="">
-            </div>
+          <div class="drive__text">
+            <div class="drive__title">Посетите салон и проведите тест-драйв лично</div>
+            <div class="drive__description">У нас есть шоурумы в Москве и Санкт-Петербурге, где мы всегда рады видеть
+              вас. Дат профессиональную консультацию и поделиться экспертизой</div>
+            <button type="button" class="button drive__button button--style">Запись на тест-драйв</button>
+          </div>
         </div>
-        </div>
-        <img class="test__img test__img--mobile" src="img/test/img-mobile.jpg" alt="">
+        <img class="drive__img" src="img/drive/drive-back-mobile.jpg" alt="">
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="footer">
 
   </footer>
 
-  
 </body>
+
 </html>

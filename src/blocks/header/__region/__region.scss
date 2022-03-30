@@ -1,9 +1,9 @@
 .header__region {
-  @include maxWindth;
+  @include vercen;
   margin-right: 2.5rem;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .header__region {
     display: none;
   }

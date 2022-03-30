@@ -1,6 +1,7 @@
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
   .header__wrap {
-    @include maxWindth;
+    display: flex;
+    justify-content: space-between;
     position: relative;
   }
 }
