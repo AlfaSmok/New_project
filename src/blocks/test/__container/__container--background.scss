@@ -10,6 +10,8 @@
 @media (max-width: 48rem) {
   .test__container--background {
     width: 100%;
-    background: #FFFFFF;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
   }
 }

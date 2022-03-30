@@ -1,14 +1,21 @@
-.test__img {
+.test__img--desktop {
   position: absolute;
-  top: -4rem;
-  left: 32rem;
+  top: -5rem;
+  left: 62rem;
   width: 53.6rem;
   height: 57.1rem;
 }
 
+.test__img--mobile {
+  display: none;
+}
 
 @media (max-width: 48rem) {
-  .test__img {
-    position: static;
+  .test__img--desktop {
+    display: none;
+  }
+
+  .test__img--mobile {
+    display: block;
   }
 }

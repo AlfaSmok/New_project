@@ -1,11 +1,11 @@
-.price__list {
-  @include centered;
+.catalog__price {
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2.6rem;
 }
 
 @media (min-width: 48rem) {
-  .price__list {
+  .catalog__price {
     display: none;
   }
 }

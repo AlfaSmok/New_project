@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Lesson-19</title>
+  <title>Lesson-20</title>
 </head>
 <body>
   <header class="header">
@@ -111,9 +111,9 @@
     </div>
     <section class="catalog">
       <div class="container">
-        <h2 class="title__document">Каталог кресел</h2>
-        <div class="price__list">
-          <input type="text" list="list" class="price_input price_input-style" placeholder="По возрастанию цены">
+        <h2 class="catalog__title">Каталог кресел</h2>
+        <div class="catalog__price">
+          <input type="text" list="list" class="catalog__price catalog__price--style" placeholder="По возрастанию цены">
             <datalist id="list">
               <option value="  "></option>
               <option value="  "></option>
@@ -123,8 +123,8 @@
         <div class="catalog__option">
           <div class="option__cart">
             <span class="subtitle__input subtitle__input--style">Спинка</span>
-            <input type="text" list="list" class="option__input option__input--style option__input--imgback" placeholder="Сетка">
-            <datalist id="list">
+            <input type="text" list="list_1" class="option__input option__input--style option__input--imgback" placeholder="Сетка">
+            <datalist id="list_1">
               <option value="  "></option>
               <option value="  "></option>
               <option value="  "></option>
@@ -132,8 +132,8 @@
           </div>
           <div class="option__cart">
             <span class="subtitle__input subtitle__input--style">Сиденье</span>
-            <input type="text" list="list" class="option__input option__input--style option__input--imggrid" placeholder="Кожзам">
-            <datalist id="list">
+            <input type="text" list="list_2" class="option__input option__input--style option__input--imggrid" placeholder="Кожзам">
+            <datalist id="list_2">
               <option value="  "></option>
               <option value="  "></option>
               <option value="  "></option>
@@ -141,8 +141,8 @@
           </div>
           <div class="option__cart">
             <span class="subtitle__input subtitle__input--style">Подголовник</span>
-            <input type="text" list="list" class="option__input option__input--style option__input--img3D" placeholder="3D">
-            <datalist id="list">
+            <input type="text" list="list_3" class="option__input option__input--style option__input--img3D" placeholder="3D">
+            <datalist id="list_3">
               <option value="  "></option>
               <option value="  "></option>
               <option value="  "></option>
@@ -150,8 +150,8 @@
           </div>
           <div class="option__cart">
             <span class="subtitle__input subtitle__input--style">Подлокотники</span>
-            <input type="text" list="list" class="option__input option__input--style option__input--imgall" placeholder="Все">
-            <datalist id="list">
+            <input type="text" list="list_4" class="option__input option__input--style option__input--imgall" placeholder="Все">
+            <datalist id="list_4">
               <option value="  "></option>
               <option value="  "></option>
               <option value="  "></option>
@@ -170,7 +170,7 @@
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <button type="submit" class="button__cart button__cart--color">Добавить в корзину</button>
+              <div class="button__cart button__cart--color">Добавить в корзину</div>
             </div>
           </a>
           <a href="#" class="cart cart__wrapper cart--color">
@@ -184,7 +184,7 @@
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <button type="submit" class="button__cart button__cart--color">Добавить в корзину</button>
+              <div class="button__cart button__cart--color">Добавить в корзину</div>
             </div>
           </a>
           <a href="#" class="cart cart__wrapper cart--color">
@@ -198,7 +198,7 @@
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <button type="submit" class="button__cart button__cart--color">Добавить в корзину</button>
+              <div class="button__cart button__cart--color">Добавить в корзину</div>
             </div>
           </a>
           <a href="#" class="cart cart__wrapper cart--color">
@@ -212,7 +212,7 @@
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <button type="submit" class="button__cart button__cart--color">Добавить в корзину</button>
+              <div class="button__cart button__cart--color">Добавить в корзину</div>
             </div>
           </a>
           <a href="#" class="cart cart__wrapper cart--color">
@@ -226,7 +226,7 @@
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <button type="submit" class="button__cart button__cart--color">Добавить в корзину</button>
+              <div class="button__cart button__cart--color">Добавить в корзину</div>
             </div>
           </a>
           <a href="#" class="cart cart__wrapper cart--color">
@@ -240,7 +240,7 @@
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <button type="submit" class="button__cart button__cart--color">Добавить в корзину</button>
+              <div class="button__cart button__cart--color">Добавить в корзину</div>
             </div>
           </a>
           <a href="#" class="cart cart__wrapper cart--color">
@@ -254,7 +254,7 @@
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <button type="submit" class="button__cart button__cart--color">Добавить в корзину</button>
+              <div class="button__cart button__cart--color">Добавить в корзину</div>
             </div>
           </a>
           <a href="#" class="cart cart__wrapper cart--color">
@@ -268,7 +268,7 @@
                 <span>27 000 ₽</span>
                 <img class="cart__coin-img" src="img/cart/line-summ.svg" alt="">
               </div>
-              <button type="submit" class="button__cart button__cart--color">Добавить в корзину</button>
+              <div class="button__cart button__cart--color">Добавить в корзину</div>
             </div>
           </a>
           
@@ -292,10 +292,11 @@
               <button type="submit" class="button__test button__test--color">Запись на тест-драйв</button>
             </div>
             <div class="test__img">
-              <img class="test__img" src="img/test/girl.png" alt="">
+              <img class="test__img test__img--desktop" src="img/test/girl.png" alt="">
             </div>
         </div>
         </div>
+        <img class="test__img test__img--mobile" src="img/test/img-mobile.jpg" alt="">
       </div>
     </div>
   </main>
