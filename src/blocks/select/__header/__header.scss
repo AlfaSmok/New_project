@@ -1,0 +1,14 @@
+.select__header {
+  display: flex;
+  align-items: center;
+
+
+  
+  img {
+    width: .8rem;
+    height: .4rem;
+    flex-shrink: 0;
+    margin-left: .8rem;
+    margin-top: .3rem;
+  }
+}
