@@ -1,0 +1,15 @@
+.map__element {
+  width: 100%;
+  height: 70.3rem;
+}
+
+[class*="copyright"] {
+  display: none !important;
+}
+
+@media (max-width: 48em) {
+  .map__element {
+    width: 100%;
+    height: 58.8rem;
+  }
+}
