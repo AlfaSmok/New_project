@@ -8,3 +8,10 @@
     color: #959AAE;
   }
 }
+
+@media (max-width: 48em) {
+  .header-logo__text {
+    font-size: 1.8rem;
+    margin-right: 10rem;
+  }
+}

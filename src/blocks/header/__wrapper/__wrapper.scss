@@ -4,9 +4,15 @@
 
 @media (max-width: 48em) {
   .header__wrapper {
+    width: 36.8rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 59%;
     transform: translate(-50%, -50%);
+  }
+
+  .header-logo__img {
+    width: 26.6rem;
+    height: 4.3rem;
   }
 }

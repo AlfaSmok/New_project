@@ -39,7 +39,7 @@ function init() {
 
   let playsmark = new ymaps.Placemark(center, {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/map/mark-cart.svg',
+    iconImageHref: 'img/map/mark-cart.svg',
     iconImageSize: [70, 100],
     iconImageOffset: [-30, -90]
   });
@@ -57,3 +57,14 @@ function init() {
 };
 
 ymaps.ready(init);
+
+
+//mobile menu
+const headerMobile = document.querySelector('.header__mobile'),
+      burger = document.querySelector('.header__burger'),
+      cross = document.querySelector('.header__cross'),
+      body = document.querySelector('body');
+
+burger.addEventListener('click', () => {
+  headerMobile.classList.add('active');
+});
