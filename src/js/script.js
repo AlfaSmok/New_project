@@ -66,5 +66,15 @@ const headerMobile = document.querySelector('.header__mobile'),
       body = document.querySelector('body');
 
 burger.addEventListener('click', () => {
-  headerMobile.classList.add('active');
+  headerMobile.classList.toggle('active');
+  burger.style.display = 'none';
+  cross.style.display = 'block';
+  body.classList.add('noscroll')
+});
+
+cross.addEventListener('click', () => {
+  headerMobile.classList.toggle('active');
+  burger.style.display = 'block';
+  cross.style.display = 'none';
+  body.classList.remove('noscroll')
 });
