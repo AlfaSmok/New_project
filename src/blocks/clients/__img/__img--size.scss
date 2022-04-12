@@ -1,0 +1,67 @@
+.clients__img--size-1 {
+  width: 10.4rem;
+  height: 5rem;
+}
+
+.clients__img--size-2 {
+  width: 14.5rem;
+  height: 9.7rem;
+}
+
+.clients__img--size-3 {
+  width: 17rem;
+  height: 4.4rem;
+}
+
+.clients__img--size-4 {
+  width: 15.1rem;
+  height: 6.3rem;
+}
+
+.clients__img--size-5 {
+  width: 12.9rem;
+  height: 6.3rem;
+}
+
+.clients__img--size-6 {
+  width: 13.2rem;
+  height: 2.2rem;
+}
+
+
+@media (max-width: 48em) {
+  .clients__img--size-1 {
+    width: 15.6rem;
+    height: 7.4rem;
+  }
+  
+  .clients__img--size-2 {
+    width: 24.6rem;
+    height: 15rem;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .clients__img--size-3 {
+    width: 26rem;
+    height: 10rem;
+  }
+  
+  .clients__img--size-4 {
+    width: 27rem;
+    height: 11.4rem;
+  }
+  
+  .clients__img--size-5 {
+    width: 20rem;
+    height: 12rem;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .clients__img--size-6 {
+    width: 24.8rem;
+    height: 4rem;
+  }
+
+}

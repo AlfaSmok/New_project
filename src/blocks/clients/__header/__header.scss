@@ -1,0 +1,12 @@
+.clients__header {
+  @include font(900, 4.4rem, 120%);
+  padding-bottom: 1.7rem;
+}
+
+
+@media (max-width: 48em) {
+  .clients__header {
+    font-size: 5.5rem;
+    padding-bottom: 3rem;
+  }
+}

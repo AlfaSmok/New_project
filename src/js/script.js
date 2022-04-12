@@ -76,5 +76,25 @@ cross.addEventListener('click', () => {
   headerMobile.classList.toggle('active');
   burger.style.display = 'block';
   cross.style.display = 'none';
-  body.classList.remove('noscroll')
+  body.classList.remove('noscroll');
+});
+
+//modal
+const modal = document.querySelector('.modal'),
+      modalButtons = document.querySelectorAll('.button__modal');
+
+modalButtons.forEach((item) => {
+  item.addEventListener('click', () => {
+    modal.classList.add('active');
+    body.classList.add('noscroll');
+  });
+});
+
+modal.addEventListener('click', (e) => {
+  const isModal = e.target.closest('.modal__inner');
+
+  if (!isModal) {
+    modal.classList.remove('active');
+    body.classList.remove('noscroll');
+  }
 });

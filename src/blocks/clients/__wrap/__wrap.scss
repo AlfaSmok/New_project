@@ -1,0 +1,13 @@
+.clients__wrap {
+  width: 110rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 48em) {
+  .clients__wrap {
+    width: 100%;
+  }
+  
+}
