@@ -1,0 +1,13 @@
+.slider {
+  &__description {
+    @include font(400, 2.1rem, 160%);
+    margin-bottom: 3.2rem;
+  }
+}
+
+
+@media (max-width: 48em) {
+  .slider__description {
+    display: none;
+  }
+}

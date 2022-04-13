@@ -1,0 +1,24 @@
+.slider__pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -3.5rem;
+  z-index: 100;
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 1rem);
+  
+
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, .6rem));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, .6rem));
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #2B3350;
+  }
+}
+
+@media (max-width: 48em) {
+  .slider__pagination {
+    top: -.5rem;
+  }
+}
