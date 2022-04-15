@@ -1,0 +1,6 @@
+.facts__description {
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  @include font(400, 2.3rem, 160%);
+  margin-bottom: 5.4rem;
+}
