@@ -1,0 +1,12 @@
+.footer__subtext {
+  @include font(400, 1rem, 150%);
+  text-align: center;
+  margin-top: -0.1rem;
+}
+
+@media (max-width: 48em) {
+  .footer__subtext {
+    @include font(400, 2rem, 150%);
+  }
+  
+}

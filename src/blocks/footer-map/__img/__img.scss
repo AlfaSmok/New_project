@@ -1,0 +1,10 @@
+.footer-map__img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+@media (max-width: 48em) {
+  .footer-map__img {
+    display: none;
+  }
+}

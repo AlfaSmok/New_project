@@ -1,0 +1,13 @@
+.footer-tel__text {
+  @include font(600, 2rem, 140%);
+  margin-left: .9rem;
+  margin-bottom: 1.7rem;
+}
+
+@media (max-width: 48em) {
+  .footer-tel__text {
+    @include font(400, 3rem, 140%);
+    margin-left: 0;
+    padding-bottom: 1rem;
+  }
+}

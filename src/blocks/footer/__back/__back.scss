@@ -1,0 +1,11 @@
+.footer__back {
+  position: absolute;
+  height: 25.4rem;
+  z-index: -1;
+}
+
+@media (max-width: 48em) {
+  .footer__back {
+    display: none; 
+  }
+}

@@ -1,0 +1,18 @@
+.footer__list li {
+  font-family: 'Manrope', sans-serif;
+  @include font(500, 1.7rem, 140%);
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .footer__list li {
+    @include font(500, 3rem, 140%);
+  
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}

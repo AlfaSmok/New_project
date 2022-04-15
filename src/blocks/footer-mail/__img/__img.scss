@@ -1,0 +1,10 @@
+.footer-mail__img {
+  width: 2rem;
+  height: 1.8rem;
+}
+
+@media (max-width: 48em) {
+  .footer-mail__img {
+    display: none;
+  }
+}

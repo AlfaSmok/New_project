@@ -1,0 +1,11 @@
+.footer__mobile {
+  display: none;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-width: 48em) {
+  .footer__mobile {
+    display: block; 
+  }
+}

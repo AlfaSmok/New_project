@@ -1,0 +1,9 @@
+.footer__description {
+  margin-top: 1rem;
+}
+
+@media (max-width: 48em) {
+  .footer__description {
+    padding-bottom: 4rem;
+  }
+}

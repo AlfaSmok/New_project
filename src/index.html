@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/swiper-bundle.js"></script>
+  <script src="js/aos.js"></script>
   <script defer src="js/script.js"></script>
   <title>ОфисДирект</title>
 </head>
@@ -238,7 +240,7 @@
       <div class="container">
         <div class="delivery__wrap">
           <div class="delivery__item">
-            <div class="delivery__img">
+            <div class="delivery__img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
               <img src="img/delivery/delivery-img-1.svg" alt="">
             </div>
             <div class="delivery__text">
@@ -249,7 +251,7 @@
             </div>
           </div>
           <div class="delivery__item">
-            <div class="delivery__img">
+            <div class="delivery__img" data-aos="fade-up" data-aos-duration="3000">
               <img src="img/delivery/delivery-img-2.svg" alt="">
             </div>
             <div class="delivery__text">
@@ -258,7 +260,7 @@
             </div>
           </div>
           <div class="delivery__item">
-            <div class="delivery__img">
+            <div class="delivery__img" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
               <img src="img/delivery/delivery-img-3.svg" alt="">
             </div>
             <div class="delivery__text">
@@ -448,7 +450,7 @@
               <label for="telephone" class="form__label">
                 <input type="tel" id="telephone" name="user-phone" class="form__input form__input--style" placeholder="Телефон для связи">
               </label>
-              <button type="submit" class="form__button form__button--style">Заказать звонок</button>
+              <button type="submit" class="form__button form__button--style button__modal">Заказать звонок</button>
             </div>
             <div class="form__item">
               <input type="checkbox" class="form__checkbox" id="check">
@@ -472,7 +474,62 @@
   </div>
 
   <footer class="footer">
-
+    <div class="container">
+      <div class="footer__wrapper">
+        <a href="#" class="footer__logo">
+          <div class="footer__img">
+            <img src="img/footer/footer-logo.png" alt="">
+          </div>
+          <div class="footer__subtext footer__subtext--style">Кресла Samurai</div>
+        </a>
+        <div class="footer__text footer__text--color">
+          <div>Политика конфиденциальности</div>
+          <div>© 2021 Все права защищены</div>
+        </div>
+        <div class="footer__description">
+          <ul class="footer__list footer__list--style">
+            <li>
+              <a class="footer__item" href="#">О продукте</a>
+            </li>
+            <li>
+              <a class="footer__item" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a class="footer__item" href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a class="footer__item" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer-tel footer__tel">
+            <div class="footer-tel__img">
+              <img src="img/footer/footer-tel.svg" alt="">
+            </div>
+            <a href="tel:+74952210675" class="footer-tel__text footer-tel__text--color">+7 495 221-06-75</a>
+          </div>
+          <div class="footer-mail footer__mail">
+            <div class="footer-mail__img">
+              <img src="img/footer/footer-mail.svg" alt="">
+            </div>
+            <a href="mailto:zakaz@kresla-samurai.ru" class="footer-mail__text footer-mail__text--color">zakaz@kresla-samurai.ru</a>
+          </div>
+          <div class="footer-map footer__map">
+            <div class="footer-map__img">
+              <img src="img/footer/footer-map.svg" alt="">
+            </div>
+            <div class="footer-map__text footer-map__text--color">ул. Красного курсанта д.25, лит.в, оф. 114, бизнес-центр "RED CADET"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__back">
+      <img src="img/footer/footer-bg.jpg" alt="">
+    </div>
+    <div class="footer__mobile">
+      <img src="img/footer/mobile-back.jpg" alt="">
+    </div>
   </footer>
 
   <div class="modal modal--style">
@@ -487,6 +544,10 @@
       </div>
     </div>
   </div>
+
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
