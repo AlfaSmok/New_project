@@ -119,36 +119,71 @@ window.addEventListener('DOMContentLoaded', () => {
 
   });
 
-  //iform send
+  //iform send + valdation
   const form = document.querySelector('.form__elements');
 
-  const sendForm = (data) => {
-    return fetch('mail.php', {
-      method: 'POST',
-      body: JSON.stringify(data),
-      headers: {
-        'Content-Type': 'application/json; charset=UTF-8'
+  const telSelector = form.querySelector('input[type="tel"]');
+  const inputMask = new Inputmask('+7 (999) 999-99-99');
+  inputMask.mask(telSelector);
+
+  const validation = new JustValidate('.form__elements');
+
+  validation
+    .addField('#name', [{
+        rule: 'minLength',
+        value: 2,
+        errorMessage: 'Количество символов меньше 2!'
+      },
+      {
+        rule: 'maxLength',
+        value: 30,
+        errorMessage: 'Количество символов больше 30!'
+      },
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Введите имя!'
       }
-    }).then(res => res.json());
-  };
+    ])
+    .addField('#telephone', [{
+        rule: 'required',
+        value: true,
+        errorMessage: 'Введите номер телефона!'
+      },
+      {
+        rule: 'function',
+        validator: function () {
+          const phone = telSelector.inputmask.unmaskedvalue();
+          return phone.length === 10;
+      },
+        errorMessage: 'Введите корректный номер телефона!'
+      }
+    ]).onSuccess((e) => {
+      if (document.querySelector('#check').checked) {
+        const sendForm = (data) => {
+          return fetch('mail.php', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+              'Content-Type': 'application/json; charset=UTF-8'
+            }
+          }).then(res => res.json());
+        };
+    
+        const dataForm = new FormData(e.target);
+        const user = {};
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+        dataForm.forEach((val, key) => {
+          user[key] = val;
+        });
 
-    const dataForm = new FormData(form);
-    const user = {};
+        sendForm(user).then(data => {
+          console.log("Письмо отправлено");
+        });
 
-    dataForm.forEach((val, key) => {
-      user[key] = val;
+        e.target.reset();
+      }
     });
-
-    sendForm(user).then(data => {
-      console.log("Письмо отправлено");
-    });
-
-    form.reset();
-
-  });
 
 
   // accordeon
@@ -178,3 +213,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+  /* form.addEventListener('submit', (e) => {
+    e.preventDefault(); */

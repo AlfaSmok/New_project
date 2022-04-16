@@ -6,12 +6,22 @@
 .noscroll {
   overflow: hidden !important;
   height: 100% !important;
+}
 
-  & .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
+.just-validate-error-label {
+  padding-top: .35rem;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 48em) {
+  .noscroll {
+
+    & .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+    }
   }
 }
