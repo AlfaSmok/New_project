@@ -30,9 +30,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   //maps
-  let center = [59.959906306451806,30.280773320098888];
+  let flag = 0;
 
-  function init() {
+  window.addEventListener('scroll', function () {
+    let scrollY = window.scrollY;
+    let mapOffset = document.querySelector('.map').offsetTop;
+
+    if ((scrollY >= mapOffset - 500) && (flag == 0)) {
+      let center = [59.959906306451806,30.280773320098888];
+
+      function init() {
     let map = new ymaps.Map('map-element', {
       center: center,
       zoom: 15
@@ -55,9 +62,15 @@ window.addEventListener('DOMContentLoaded', () => {
     map.behaviors.disable(['scrollZoom']); // отключаем скролл карты
 
     map.geoObjects.add(playsmark);
-  };
+      };
 
-  ymaps.ready(init);
+      ymaps.ready(init);
+
+      flag = 1;
+    }
+  });
+
+  
 
 
   //mobile menu
@@ -145,6 +158,12 @@ window.addEventListener('DOMContentLoaded', () => {
         errorMessage: 'Введите имя!'
       }
     ])
+    .addField('#check', [{
+        rule: 'required',
+        value: true,
+        errorMessage: 'Подтвердите свое согласие!'
+      }
+    ])
     .addField('#telephone', [{
         rule: 'required',
         value: true,
@@ -181,8 +200,11 @@ window.addEventListener('DOMContentLoaded', () => {
           console.log("Письмо отправлено");
         });
 
+        modal.classList.add('active')
+
         e.target.reset();
       }
+
     });
 
 
