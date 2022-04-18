@@ -1,3 +1,13 @@
 .facts__minus {
   display: none;
 }
+
+@media (max-width: 48em) {
+  .facts__minus {
+    position: absolute;
+    top: 0;
+    right: -.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}

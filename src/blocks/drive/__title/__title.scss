@@ -9,6 +9,7 @@
   .drive__title {
     text-align: center;
     padding: 0 4rem 1.3rem;
+    @include font(900, 5.3rem, 120%);
 
   }
 }

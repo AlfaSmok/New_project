@@ -4,3 +4,10 @@
   padding-right: 6.7rem;
   display: none;
 }
+
+
+@media (max-width: 48em) {
+  .facts__answer {
+    font-size: 2.4rem;
+  }
+}

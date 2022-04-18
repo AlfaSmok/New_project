@@ -1,16 +1,10 @@
 .facts {
   margin-bottom: 10rem;
-
-  .title {
-    padding-bottom: 2.5rem;
-  }
 }
 
 
 @media (max-width: 48em) {
   .facts {
-    .title {
-      @include font(900, 5.6rem, 120%);
-    }
+    margin-top: 58rem;
   }
 }

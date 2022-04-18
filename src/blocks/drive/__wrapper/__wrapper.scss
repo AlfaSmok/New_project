@@ -1,12 +1,15 @@
 .drive__wrapper {
-  width: 180rem;
+  width: 190rem;
   margin: 0 auto;
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 @media (max-width: 48em) {
   .drive__wrapper {
+    position: relative;
     width: 100%;
-    padding-top: 10rem;
+    bottom: 10rem;
+    
   }
 }

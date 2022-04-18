@@ -5,5 +5,7 @@
 @media (max-width: 48em) {
   .drive__img {
     display: block;
+    position: absolute;
+    z-index: -1;
   }
 }

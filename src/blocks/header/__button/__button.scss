@@ -1,10 +1,20 @@
 .header__button {
   @include font(500, 1.6rem, 140%);
   padding: 1.35rem 2.85rem 1.55rem;
+  border-radius: .8rem;
+
+  &:hover {
+    background-color: #d4d8e1;
+  }
 }
 
 @media (max-width: 48em) {
   .header__button {
     display: none;
+
+    &:hover {
+      background-color: none;
+    }
+    
   }
 }

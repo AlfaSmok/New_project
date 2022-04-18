@@ -2,4 +2,9 @@
   @include centered;
   padding-top: 2.4rem;
   padding-bottom: 2.6rem;
+  margin-bottom: 7rem;
+
+  &:hover {
+    background-color: #d4d8e1;
+  }
 }

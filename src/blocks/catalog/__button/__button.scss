@@ -1,6 +1,10 @@
 .catalog__button {
-  font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 130%;
+  @include font(600, 1.8rem, 130%);
   color: #191E32;
+}
+
+@media (max-width: 48em) {
+  .catalog__button {
+    font-size: 3.2rem;
+  }
 }

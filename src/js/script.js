@@ -95,7 +95,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   //modal
   const modal = document.querySelector('.modal'),
-        modalButtons = document.querySelectorAll('.button__modal');
+        modalButtons = document.querySelectorAll('.button-modal');
 
   modalButtons.forEach((item) => {
     item.addEventListener('click', () => {

@@ -1,3 +1,10 @@
 .header__shop {
   @include vercen;
 }
+
+
+@media (max-width: 48em) {
+  .header__shop {
+    position: relative;
+  }
+}

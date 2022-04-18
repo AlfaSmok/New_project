@@ -1,4 +1,12 @@
 .drive {
-  padding-top: 3.5rem;
-  padding-bottom: 10.8rem;
+  padding-top: 15rem;
+  padding-bottom: .8rem;
+}
+
+
+@media (max-width: 48em) {
+  .drive {
+    padding-top: 12.5rem;
+    padding-bottom: 0;
+  }
 }
